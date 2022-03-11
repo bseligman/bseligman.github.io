@@ -75,12 +75,13 @@ h4 {
 p {
     color: white;
     font-family: verdana;
+    font-size: 2.5vw;
     background-color: rgb(195, 97, 23);
    
     text-align: center;
     position: center; 
    
-    height: 3vw; 
+    height: 5vw; 
     width: 100%;
 
 }
