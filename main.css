@@ -1,12 +1,6 @@
 body {
-    background-color: rgb(255, 255, 255);
-    background-image: url("image.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-origin: content-box;
-    background-attachment: scroll;
-    background-size: 110vw 70vw;
-
+    padding: 0;
+    margin:0px;
 
 }
   
@@ -15,8 +9,8 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 1;
-    padding: 1;
+    margin: 0;
+    padding: 2;
     overflow: hidden;
     background-color: rgb(195, 97, 23);
   }
@@ -42,13 +36,17 @@ li a:hover {
 
 
 
-
-
 h1 {
     color: white;
     text-align: center;
     font-family: verdana;
     font-size: 8vw;
+    
+    position: absolute;
+    top: 10vw;
+    right: 5vw;
+
+  
 }
   
 h2 {
@@ -70,6 +68,19 @@ h4 {
     text-align: center;
     font-family: verdana;
     font-size: 5vw; 
+}
+
+h6 {
+
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-size: 6vw;
+    
+    position: absolute;
+    top: 10vw;
+    right: 27.5vw;
+
 }
 
 p {
