@@ -1,6 +1,6 @@
 body {
     padding: 0;
-    margin:0px;
+    margin: 0px;
 
 }
   
@@ -58,16 +58,31 @@ h2 {
 
 h3 {
     color: black;
-    text-align: center;
+    text-align: left;
     font-family: verdana;
-    font-size: 1vw;
+    font-size: 1.5vw;
+
+    margin-right: 80px;
+    margin-left: 80px;
+
+    padding-left: 0;
+    list-style-position: inside;
 }
+      
 
 h4 {
     color: black;
-    text-align: center;
+    text-align: left;
     font-family: verdana;
-    font-size: 3vw; 
+    font-size: 4vw; 
+
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+
+
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 h6 {
@@ -79,7 +94,7 @@ h6 {
     
     position: absolute;
     top: 10vw;
-    right: 27.5vw;
+    right: 20.5vw;
 
 }
 
