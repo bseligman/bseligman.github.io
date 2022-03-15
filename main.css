@@ -44,15 +44,18 @@ li a {
     text-decoration: none;
     font-size: 22px;
     font-family: verdana;
-    
 
     font-weight: lighter;
 
     
 }
   
+/* Select Button Edit */
+
 li a:hover {
-    background-color: rgba(174, 255, 0, 0.522);
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgba(223, 189, 163, 0.737);
 }
 
 
