@@ -19,7 +19,7 @@ ul {
     margin: 0;
     padding: 2;
     overflow: hidden;
-    background-color: rgb(195, 97, 23);
+    background-color: rgb(44, 104, 255);
 
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ li a {
 li a:hover {
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: rgba(223, 189, 163, 0.737);
+    text-decoration-color: rgb(44, 104, 255);
 }
 
 
@@ -63,7 +63,7 @@ li a:hover {
 
 
 h1 {
-    color: rgb(195, 97, 23);
+    color: rgb(44, 104, 255);
     text-align: center;
     font-family: verdana;
     font-size: 6vw;
@@ -147,7 +147,7 @@ p {
     color: white;
     font-family: verdana;
     font-size: 2.5vw;
-    background-color: rgb(195, 97, 23);
+    background-color: rgb(44, 104, 255);
    
     text-align: center;
     position: center; 
