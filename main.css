@@ -49,18 +49,20 @@ li a {
 
     
 }
+
+/* Text Stroke */
+
   
 /* Select Button Edit */
 
 li a:hover {
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: rgb(255, 157, 0);
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 
 /* Main Name */
-
 
 h1 {
     color: rgb(0, 102, 255);
@@ -72,7 +74,25 @@ h1 {
     top: 10vw;
     right: 17vw;
 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+
   
+}
+
+/* Dev Name */
+
+h9 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: verdana;
+    font-size: 6vw;
+    
+    position: absolute;
+    top: 20vw;
+    right: 32vw; 
+
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+
 }
 
 /* Unused */
@@ -123,7 +143,7 @@ h4 {
 
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: rgb(255, 157, 0);
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 /* Main name title */
@@ -141,6 +161,8 @@ h6 {
     right: 30vw;
 
     font-weight: lighter;
+
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
 
 }
 
