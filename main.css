@@ -19,7 +19,7 @@ ul {
     margin: 0;
     padding: 2;
     overflow: hidden;
-    background-color: rgb(44, 104, 255);
+    background-color: rgb(0, 102, 255);
 
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ li a {
 li a:hover {
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: rgb(44, 104, 255);
+    text-decoration-color: rgb(255, 157, 0);
 }
 
 
@@ -63,7 +63,7 @@ li a:hover {
 
 
 h1 {
-    color: rgb(44, 104, 255);
+    color: rgb(0, 102, 255);
     text-align: center;
     font-family: verdana;
     font-size: 6vw;
@@ -120,6 +120,10 @@ h4 {
 
     padding-left: 0;
     list-style-position: inside;
+
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgb(255, 157, 0);
 }
 
 /* Main name title */
@@ -147,7 +151,7 @@ p {
     color: white;
     font-family: verdana;
     font-size: 2.5vw;
-    background-color: rgb(44, 104, 255);
+    background-color: rgb(0, 102, 255);
    
     text-align: center;
     position: center; 
