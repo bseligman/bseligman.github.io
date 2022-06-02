@@ -17,7 +17,7 @@ body {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 2;
+    padding: 20;
     overflow: hidden;
     background-color: rgb(0, 102, 255);
 
@@ -71,7 +71,7 @@ h1 {
     font-size: 6vw;
     
     position: absolute;
-    top: 10vw;
+    top: 20%;
     right: 17vw;
   
 }
@@ -85,8 +85,8 @@ h9 {
     font-size: 5vw;
     
     position: absolute;
-    top: 20vw;
-    right: 26vw; 
+    top: 40%;
+    right: 35vw; 
 
 
 }
@@ -183,7 +183,7 @@ p {
 /* !!! BELOW IS SIDEBAR !!! */
 
 br {
-    line-height: 20vw;
+    line-height: 10vw;
   }
   
   .sidenav {
@@ -228,7 +228,7 @@ br {
 
 #main {
     transition: margin-left .2s;
-    padding: 16px;
+    padding: 30px;
 }
 
 @media screen and (max-height: 450px) {
