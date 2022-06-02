@@ -7,27 +7,27 @@
   <meta name="description" content="">
   <meta name="author" content="Benjamin Seligman">
  <link rel="stylesheet" href="main.css">
-
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5838204780125019"
-     crossorigin="anonymous"></script>
-
 <title>Benjamin Seligman</title>
+
 <link rel="icon" type="image/x-icon" href="favicon.png">
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5838204780125019"
-crossorigin="anonymous"></script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5838204780125019"
-     crossorigin="anonymous"></script>
-
-</head>
+<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    <span style="color: white; font-size:60px; position: fixed; top: -5px; right: 20px; outline: 5px solid white ;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 
 <style>
   .parallax {
-    background-image: url("image.png");
+    background-image: url("city.jpg");
   
-    min-height: 770px; 
+    min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,29 +44,50 @@ crossorigin="anonymous"></script>
 </ul>
 
 <body>
-
 <div class="parallax"></div>
+<div id="main">
 
-
+<a id="home"></a>
 <h1>Benjamin Seligman</h1>
-<h9>Developer</h9>
+<h9>Future Developer</h9>
 
-<div style="height:0;background-color:white;font-size:36px"></div>
-
-<h3> Test </h3> 
 
 <p></p>
 
 <h4> Who Am I? </h4>
-<h3> A person. Well not just a person. A Bergen County High School student with over 4+ years of programming experience, who also has a passion for coding & for teaching others about computers </h3>
+<h3> Someone. Well, more then just someone. A Bergen County High School student with over 4+ years of programming experience, who also has a passion for coding & for teaching others about computer science </h3>
 
 <p></p>
 
+<a id="about"></a>
+<h4> This Website? </h4>
+<h3> Made by me, paid (monthly) by me, and supported by you, the user. Every penny from your click goes back into this light-weight, efficient, and easy-to-use website. </h3>
+
+<p></p>
+
+<a id="projects"></a>
 <h4> What have I done so far? </h4>
 <h3> Many things. Here's some examples below: </h3>
 <a id="contact"></a>
 <p> benjaminseligman1@gmail.com </p>
 <p> Copyright PENDING </p>
+
+</div id="main">
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+
+  }
+  </script>
+
 
 
 </body>
