@@ -112,11 +112,11 @@ h3 {
     color: black;
     text-align: center;
     font-family: verdana;
-    font-size: 24px;
+    font-size: 150%;
     font-weight: lighter;
 
     margin: auto;
-    width: 60%;
+    width: 70%;
     padding: 15px;
     list-style-position: inside;
 }
@@ -128,14 +128,14 @@ h4 {
     color: black;
     text-align: center;
     font-family: verdana;
-    font-size: 34px; 
+    font-size: 170%; 
     font-weight: bold;
 
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: 20%;
+    margin-left: 15%;
     margin-bottom: 20px;
 
-    min-width: 50px;
+    width: 70%;
 
 
     padding-left: 0;
