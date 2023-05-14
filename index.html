@@ -19,27 +19,28 @@
     </div>
     
     <!-- Use any element to open the sidenav -->
-    <span style="color: white; font-size: 4vw; position: fixed; top: 10px; height: 6vh; width: 50px; right: 5vw; background:url(button.png) no-repeat; cursor:pointer" onclick="openNav()"></span>
+    <span style="color: white; font-size: 4vw; position: fixed; top: 2%; height: 19vh; width: 12vw; right: 2%; background:url(button.png) no-repeat; cursor:pointer" onclick="openNav()"></span>
 
 
 <style>
   .parallax {
-    background-image: url("city.jpg");
-  
-    min-height: 100vh; 
+      background: url("lecube.png");
+
+    min-height: 66vw;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 10%;
+    background-repeat: inherit;
+    background-size: 30%;
+
  
   }
   </style>
 
 <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html">Resume</a></li>
-    <li><a href="tutor.html">Coding Tutor</a></li>
-    <li><a href="#contact">Contact </a>
+    <li><a href="index.html"><img src="home.png" style="width:8vw;position: absolute; top: 2%; right: 62%;>"</a></li>
+    <li><a href="index.html"><img src="myresu.png" style="width:11vw;position: absolute; top: 1%; right: 48%;"></a></li>
+    <li><a href="tutor.html"><img src="tutor.png" style="width:11vw; position: absolute; top: 2%; right: 37%;"></a></li>
+    <li><a href="#contact"><img src="aboutme.png" style="width:9vw; position: absolute; top: 2%; right: 27%;"></a><
 </ul>
 
 <body>
@@ -47,8 +48,11 @@
 <div class="parallax"></div>
 <div id="main">
 
-<h1>Benjamin Seligman</h1>
-<h9>Developer</h9>
+    
+    <picture>
+      <source srcset="MYLOGO.png">
+      <img src="MYLOGO.png alt=Logo" style="width:16hw; position: absolute; top: 16%; right: 10%;">
+    </picture>
 
 
 <p></p>
@@ -69,11 +73,50 @@
 <h3> Many things. Here's some examples below: </h3>
 <a id="contact"></a>
 <p> benjaminseligman1@gmail.com </p>
-<p> Copyright benjaminseligman.us </p>
+<p> Copyright pending </p>
 
 </div id="main">
 
 <script>
+    // The debounce function receives our function as a parameter
+    const debounce = (fn) => {
+
+      // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+      let frame;
+
+      // The debounce function returns a new function that can receive a variable number of arguments
+      return (...params) => {
+
+        // If the frame variable has been defined, clear it now, and queue for next frame
+        if (frame) {
+          cancelAnimationFrame(frame);
+        }
+
+        // Queue our function call for the next frame
+        frame = requestAnimationFrame(() => {
+
+          // Call our function and pass any params we received
+          fn(...params);
+        });
+
+      }
+    };
+
+    // Reads out the scroll position and stores it in the data attribute
+    // so we can use it in our stylesheets
+    const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+    }
+
+    // Listen for new scroll events, here we debounce our `storeScroll` function
+    document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+
+    // Update scroll position for first time
+    storeScroll();
+    
+    
+    
+    
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginRight = "250px";
