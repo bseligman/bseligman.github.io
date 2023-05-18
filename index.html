@@ -19,12 +19,12 @@
     </div>
     
     <!-- Use any element to open the sidenav -->
-    <span style="color: white; font-size: 4vw; position: fixed; top: 2%; height: 19vh; width: 12vw; right: 2%; background:url(button.png) no-repeat; cursor:pointer" onclick="openNav()"></span>
+    <span style="color: white; font-size: 4vw; position: fixed; top: 2%; height: 19vh; width: 12vw; right: 2%; background:url(buttons/button.png) no-repeat; cursor:pointer" onclick="openNav()"></span>
 
 
 <style>
   .parallax {
-      background: url("lecube.png");
+      background: url("buttons/lecube.png");
 
     min-height: 66vw;
     background-attachment: fixed;
@@ -37,10 +37,12 @@
   </style>
 
 <ul>
-    <li><a href="index.html"><img src="home.png" style="width:8vw;position: absolute; top: 2%; right: 62%;>"</a></li>
-    <li><a href="index.html"><img src="myresu.png" style="width:11vw;position: absolute; top: 1%; right: 48%;"></a></li>
-    <li><a href="tutor.html"><img src="tutor.png" style="width:11vw; position: absolute; top: 2%; right: 37%;"></a></li>
-    <li><a href="#contact"><img src="aboutme.png" style="width:9vw; position: absolute; top: 2%; right: 27%;"></a><
+  <script src="new.js">
+  </script>
+    <li><a href="index.html"><img src="buttons/home.png" style="width:8vw;position: absolute; top: 2%; right: 62%;>"</a></li>
+    <li><a href="display()"><img src="buttons/myresu.png" style="width:11vw;position: absolute; top: 1%; right: 48%;"></a></li>
+    <li><a href="tutor.html"><img src="buttons/tutor.png" style="width:11vw; position: absolute; top: 2%; right: 37%;"></a></li>
+    <li><a href="#contact"><img src="buttons/aboutme.png" style="width:9vw; position: absolute; top: 2%; right: 27%;"></a><
 </ul>
 
 <body>
@@ -51,26 +53,26 @@
     
     <picture>
       <source srcset="MYLOGO.png">
-      <img src="MYLOGO.png alt=Logo" style="width:16hw; position: absolute; top: 16%; right: 10%;">
+      <img src="MYLOGO.png alt=Logo" style="width:60vw; position: absolute; top: 16%; right: 17.5%;">
     </picture>
 
 
 <p></p>
 
 <h4> Who Am I? </h4>
-<h3> Someone. Well, more then just someone. A Bergen County High School student with over 4+ years of programming experience, who also has a passion for coding & for teaching others about computer science </h3>
+<h3> Lodem ipsum </h3>
 
 <p></p>
 
 <a id="about"></a>
 <h4> This Website? </h4>
-<h3> Made by me, paid (monthly) by me, and supported by you, the user. Every penny from your click goes back into this light-weight, efficient, and easy-to-use website. </h3>
+<h3> Lodem ipsum </h3>
 
 <p></p>
 
 <a id="projects"></a>
-<h4> What have I done so far? </h4>
-<h3> Many things. Here's some examples below: </h3>
+<h4> Projects i've done; </h4>
+<h3> Lodem ipsum</h3>
 <a id="contact"></a>
 <p> benjaminseligman1@gmail.com </p>
 <p> Copyright pending </p>
@@ -78,45 +80,6 @@
 </div id="main">
 
 <script>
-    // The debounce function receives our function as a parameter
-    const debounce = (fn) => {
-
-      // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-      let frame;
-
-      // The debounce function returns a new function that can receive a variable number of arguments
-      return (...params) => {
-
-        // If the frame variable has been defined, clear it now, and queue for next frame
-        if (frame) {
-          cancelAnimationFrame(frame);
-        }
-
-        // Queue our function call for the next frame
-        frame = requestAnimationFrame(() => {
-
-          // Call our function and pass any params we received
-          fn(...params);
-        });
-
-      }
-    };
-
-    // Reads out the scroll position and stores it in the data attribute
-    // so we can use it in our stylesheets
-    const storeScroll = () => {
-      document.documentElement.dataset.scroll = window.scrollY;
-    }
-
-    // Listen for new scroll events, here we debounce our `storeScroll` function
-    document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-    // Update scroll position for first time
-    storeScroll();
-    
-    
-    
-    
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginRight = "250px";
