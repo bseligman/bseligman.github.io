@@ -1,0 +1,273 @@
+:root {
+  --crust: #493B2A;
+  --crustshadow: #fbab0b;
+  --uhh: #6153CC;
+  --uhhshadow: #4630f0;
+  --cheese: #FFC857;
+  --sauce: #DB3A34;
+  --sauceshadow: #ff0800;
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CUSTOM FONTS & BORDERS */ 
+@font-face {
+  font-family: TheBiteOf;
+  src: url(PixelHeader.ttf);
+}
+
+@font-face {
+  font-family: pixelTitle;
+  src: url(PixelBody.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: pixelBody;
+  src: url(PixelBody.ttf);
+}
+
+#maintitle {
+  image-rendering: pixelated;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10%;
+  animation: heartbeatTitle 3.5 infinite alternate;
+}
+
+
+body {
+  background-image: url("backdrop.png");
+  background-size: 256px 256px;
+  background-repeat: repeat;
+  image-rendering: pixelated;
+  
+  margin:0;
+  padding:0;
+  
+  height: 6vh; 
+
+  font-family: pixelBody;
+  
+}
+
+h1,h2,p{
+  -webkit-animation-fill-mode: forward;
+  color: var(--uhh);
+  text-align: center;
+  font-family: pixelBody;
+}
+
+h1, h3 {
+  font-family: pixelBody;
+
+  font-size: 400%;
+  
+  /*
+  background-image: linear-gradient(45deg,var(--cheese),var(--cheese));
+  box-shadow: 0px 15px var(--crustshadow);
+  */
+
+  border-image: url(textbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 40%;
+  padding: 1%;
+  margin-top: 10%;
+
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+
+}
+
+/* TEXT */
+h3 {
+  color: var(--sauce);
+  font-family: pixelTitle;
+  font-size: 450%;
+  width: 20%;
+  text-shadow: 3px 3px 0px var(--crust);
+  letter-spacing: 4px;
+}
+
+/* SUB TEXT */
+
+h2 {
+  
+  color: var(--uhh);
+  width: 30%;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 350%;
+
+  text-shadow: 3px 3px 0px var(--crust);
+  letter-spacing: 3px;
+
+
+  margin: auto;
+  padding: 1%;
+  margin-top: 20px;
+
+  /*
+  background-image: linear-gradient(45deg,var(--cheese),var(--cheese));
+  border: 9px solid var(--crust);
+  box-shadow: 0px 10px var(--crustshadow);
+  */
+
+  border-image: url(textbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
+
+}
+
+/* MAIN TITLE */
+h1{
+  color: var(--sauce);
+  letter-spacing: -10px;
+  text-shadow: 1px 1px 0px var(--sauceshadow);
+  font-family: TheBiteOf;
+  font-size: 550%;
+  width: 50%;
+
+  z-index: 10;
+}
+
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 120vh;
+  overflow:visible;
+  top: 10px;
+
+  z-index:0;
+}
+
+.bubble{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  animation: rise 7s infinite ease-in;
+  background-image: url("bubbleanimated.gif");
+  background-size: contain;
+  opacity: 0.62;
+  image-rendering: pixelated;
+
+  z-index:-5;
+}
+
+.star{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  background: transparent;
+  animation: fall 2s infinite ease-in;
+  background-image: url("bubbleanimated.gif");
+  background-size: contain;
+  opacity: 0.62;
+  image-rendering: pixelated;
+
+  z-index:-5;
+}
+
+@keyframes rise{
+  0%{
+    bottom:-600px;
+    transform:translateX(0px);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(100px);
+  }
+}
+
+@keyframes fall{
+  0%{
+    transform:translateY(0px);
+    opacity: 1;
+  }
+  50%{
+    transform:translateY(300px);
+    opacity: 0.6;
+
+  }
+  100%{
+    transform:translateY(1000px);
+    opacity: 0;
+
+  }
+}
+
+@keyframes heartbeatBig{
+  0%{
+    font-size: 350%;
+    letter-spacing: 3px;
+    transform: translateY(-10px);
+  }
+  50%{
+    font-size: 325%;
+    letter-spacing: 6px;
+    transform: translateY(-20px);
+  }
+  100%{
+    font-size: 350%;
+    letter-spacing: 3px;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes heartbeatTitle{
+  0%{
+    width: 50%
+  }
+  50%{
+    width: 40%
+  }
+  100%{
+    width: 30%
+  }
+}
+
+@keyframes colorSelect{
+  0%{
+    color: var(--uhh);
+  }
+  15%{
+    color: var(--uhh);
+  }
+  25%{
+    color: var(--uhhshadow);
+  }
+  50%{
+    color: var(--sauce);
+  }
+  75%{
+    color: var(--sauceshadow);
+  } 
+  100%{
+    color: var(--sauceshadow);
+  } 
+}
+
+h2:hover {
+  animation:
+    colorSelect 0.65s forwards,
+    heartbeatBig 3.5s infinite alternate;
+}
