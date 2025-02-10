@@ -64,6 +64,8 @@ h1,h2,p{
   color: var(--uhh);
   text-align: center;
   font-family: pixelBody;
+  border-image: url(textbox.png) 30 round;
+
 }
 
 h1, h3 {
@@ -76,7 +78,6 @@ h1, h3 {
   box-shadow: 0px 15px var(--crustshadow);
   */
 
-  border-image: url(textbox.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
@@ -97,17 +98,21 @@ h3 {
   color: var(--sauce);
   font-family: pixelTitle;
   font-size: 450%;
-  width: 20%;
+  width: 35%;
   text-shadow: 3px 3px 0px var(--crust);
   letter-spacing: 4px;
+  border-image: url(customtextbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
 }
 
 /* SUB TEXT */
 
-h2 {
+h2,h4 {
   
   color: var(--uhh);
-  width: 30%;
+  width: 50%;
   text-align: left;
   vertical-align: middle;
   font-size: 350%;
@@ -117,8 +122,7 @@ h2 {
 
 
   margin: auto;
-  padding: 1%;
-  margin-top: 20px;
+  padding: 3%;
 
   /*
   background-image: linear-gradient(45deg,var(--cheese),var(--cheese));
@@ -131,6 +135,14 @@ h2 {
   border-image-slice: 30% fill;
 
 
+}
+
+/* Sub Project TEXT */
+h4{
+  color: var(--uhhshadow);
+  text-shadow: 3px 3px 0px var(--crust);
+
+  font-size: 400%;
 }
 
 /* MAIN TITLE */
@@ -270,4 +282,62 @@ h2:hover {
   animation:
     colorSelect 0.65s forwards,
     heartbeatBig 3.5s infinite alternate;
+}
+
+a.button {
+  margin: 0% auto;
+  display: block;
+  text-align: center;
+  width: 15%;
+  margin-top: 0%;
+
+  font-family: pixelBody;
+  font-size: 400%;
+  color: var(--sauceshadow);
+
+  border-image: url(textbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+}
+
+.customimg,.customimgR {
+  border-radius: 8px;
+  display: block;
+  margin-left: 12%;
+  margin-top: -25%;
+  
+
+  width: 300px;
+  height: 300px;
+}
+
+.customimgR{
+  margin-left:70%;
+  margin-top: -20%;
+
+}
+
+projectdesc{
+  margin: 0% auto;
+  display: block;
+  text-align: center;
+  width: 25%;
+  margin-top: 0%;
+  height: auto;
+
+
+  font-family: pixelBody;
+  font-size: 400%;
+  color: var(--uhh);
+  text-shadow: 3px 3px 0px var(--crust);
+
+  border-image: url(textbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
+  font-smooth: never;
+  -webkit-font-smoothing : none;
 }
