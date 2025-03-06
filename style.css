@@ -232,6 +232,8 @@ h1{
     font-size: 350%;
     letter-spacing: 3px;
     transform: translateY(-10px);
+    margin-top: -10px;
+    margin-bottom: -20px;
   }
   50%{
     font-size: 325%;
@@ -284,6 +286,11 @@ h2:hover {
     heartbeatBig 3.5s infinite alternate;
 }
 
+h4:hover {
+  animation:
+    heartbeatBig 3.5s infinite alternate;
+}
+
 a.button {
   margin: 0% auto;
   display: block;
@@ -295,7 +302,7 @@ a.button {
   font-size: 400%;
   color: var(--sauceshadow);
 
-  border-image: url(textbox.png) 30 round;
+  border-image: url(customtextboxHead.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
@@ -304,14 +311,15 @@ a.button {
 }
 
 .customimg,.customimgR {
-  border-radius: 8px;
+  border-radius: 12px;
   display: block;
   margin-left: 12%;
-  margin-top: -25%;
+  margin-top: -15%;
   
 
   width: 300px;
   height: 300px;
+  
 }
 
 .customimgR{
@@ -334,7 +342,7 @@ projectdesc{
   color: var(--uhh);
   text-shadow: 3px 3px 0px var(--crust);
 
-  border-image: url(textbox.png) 30 round;
+  border-image: url(customtextboxHead.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
