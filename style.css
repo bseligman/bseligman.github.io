@@ -16,6 +16,36 @@ html {
   background-attachment: fixed;
 }
 
+/* NAV BAR */
+.topnav {
+  width: 95%;
+  height: 80%;
+
+  border-image: url(navbartextbox.png) 30 round;
+  border-image-width: 20px;
+  border-image-slice: 30% fill;
+
+  padding: 3vh;
+
+  z-index: 15;
+
+  position:relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 10vh;
+  font-size: 50px;
+
+  z-index: 15;
+}
+
+.topnav a:hover {
+  color: red;
+}
+
 /* CUSTOM FONTS & BORDERS */ 
 @font-face {
   font-family: TheBiteOf;
@@ -41,6 +71,7 @@ html {
   width: 50%;
   margin-top: 10%;
   animation: heartbeatTitle 3.5 infinite alternate;
+  z-index: 10;
 }
 
 
@@ -49,14 +80,8 @@ body {
   background-size: 256px 256px;
   background-repeat: repeat;
   image-rendering: pixelated;
-  
-  margin:0;
-  padding:0;
-  
-  height: 6vh; 
 
   font-family: pixelBody;
-  
 }
 
 h1,h2,p{
@@ -154,7 +179,7 @@ h1{
   font-size: 550%;
   width: 50%;
 
-  z-index: 10;
+  z-index: 5;
 }
 
 .bubbles{
@@ -292,11 +317,10 @@ h4:hover {
 }
 
 a.button {
-  margin: 0% auto;
+  margin: 1% auto;
   display: block;
   text-align: center;
   width: 15%;
-  margin-top: 0%;
 
   font-family: pixelBody;
   font-size: 400%;
@@ -312,19 +336,16 @@ a.button {
 
 .customimg,.customimgR {
   border-radius: 12px;
-  display: block;
-  margin-left: 12%;
-  margin-top: -15%;
+  display: block;  
   
-
+  margin-left: 50%;
   width: 300px;
   height: 300px;
   
 }
 
 .customimgR{
-  margin-left:70%;
-  margin-top: -20%;
+
 
 }
 
