@@ -21,7 +21,7 @@ html {
   width: 95%;
   height: 80%;
 
-  border-image: url(navbartextbox.png) 30 round;
+  border-image: url(customtextbox.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
@@ -34,7 +34,7 @@ html {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: #000000;
+  color: var(--uhh);
   text-align: center;
   padding: 10vh;
   font-size: 50px;
@@ -43,8 +43,10 @@ html {
 }
 
 .topnav a:hover {
-  color: red;
-}
+  animation:
+    colorSelect 0.65s forwards,
+    heartbeatBig 3.5s infinite alternate;
+  }
 
 /* CUSTOM FONTS & BORDERS */ 
 @font-face {
@@ -307,7 +309,6 @@ h1{
 
 h2:hover {
   animation:
-    colorSelect 0.65s forwards,
     heartbeatBig 3.5s infinite alternate;
 }
 
@@ -334,19 +335,13 @@ a.button {
   -webkit-font-smoothing : none;
 }
 
-.customimg,.customimgR {
-  border-radius: 12px;
-  display: block;  
-  
-  margin-left: 50%;
-  width: 300px;
-  height: 300px;
-  
+.row {
+  display: flex;
 }
 
-.customimgR{
-
-
+.column {
+  flex: 50%;
+  padding: 5px;
 }
 
 projectdesc{
