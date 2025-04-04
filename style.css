@@ -13,46 +13,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-/* NAV BAR */
-.topnav {
-  width: 95%;
-  height: 80%;
-
-  border-image: url(customtextbox.png) 30 round;
-  border-image-width: 20px;
-  border-image-slice: 30% fill;
-
-  padding: 3vh;
-
-  z-index: 15;
-
-  position:relative;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: var(--uhh);
-  text-align: center;
-  padding: 10vh;
-  font-size: 50px;
-
-  z-index: 15;
-}
-
-.topnav a:hover {
-  animation:
-    colorSelect 0.65s forwards,
-    heartbeatBig 3.5s infinite alternate;
-  }
-
-/* Image scaledown */
-img {
-  width: 100%;
-  height: 100%;
-  max-height: 90%;
 }
 
 /* CUSTOM FONTS & BORDERS */ 
@@ -78,20 +38,30 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height:50%;
-  margin-top: 10%;
   animation: heartbeatTitle 3.5 infinite alternate;
-  z-index: 10;
 }
 
-
-body {
+#backColor{
+  background-image: linear-gradient(rgba(201, 29, 29, 0.3) rgba(230, 25, 179, 0.3));
+  background-size: cover;
+  z-index: -5;
+}
+#backBase{
   background-image: url("backdrop.png");
   background-size: 256px 256px;
   background-repeat: repeat;
   image-rendering: pixelated;
+  z-index: -1;
+}
+
+body {
+  margin:0;
+  padding:0;
+  
+  height: 6vh; 
 
   font-family: pixelBody;
+  
 }
 
 h1,h2,p{
@@ -99,20 +69,14 @@ h1,h2,p{
   color: var(--uhh);
   text-align: center;
   font-family: pixelBody;
-  border-image: url(textbox.png) 30 round;
-
 }
 
 h1, h3 {
   font-family: pixelBody;
 
   font-size: 400%;
-  
-  /*
-  background-image: linear-gradient(45deg,var(--cheese),var(--cheese));
-  box-shadow: 0px 15px var(--crustshadow);
-  */
 
+  border-image: url(textbox.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
@@ -133,55 +97,34 @@ h3 {
   color: var(--sauce);
   font-family: pixelTitle;
   font-size: 450%;
-  width: 35%;
+  width: 20%;
   text-shadow: 3px 3px 0px var(--crust);
   letter-spacing: 4px;
-  border-image: url(customtextbox.png) 30 round;
-  border-image-width: 20px;
-  border-image-slice: 30% fill;
-
-}
-
-/* List */
-li {
-  display: grid;
-  grid-template-columns: auto auto auto;
 }
 
 /* SUB TEXT */
-h2,h4 {
+
+h2 {
   
   color: var(--uhh);
-  width: 80%;
+  width: 30%;
   text-align: left;
-  font-size: 230%;
+  vertical-align: middle;
+  font-size: 350%;
 
-  text-shadow: 2px 2px 0px var(--crust);
+  text-shadow: 3px 3px 0px var(--crust);
   letter-spacing: 3px;
 
 
   margin: auto;
-  padding: 3%;
-
-  /*
-  background-image: linear-gradient(45deg,var(--cheese),var(--cheese));
-  border: 9px solid var(--crust);
-  box-shadow: 0px 10px var(--crustshadow);
-  */
+  padding: 1%;
+  margin-top: 20px;
 
   border-image: url(textbox.png) 30 round;
   border-image-width: 20px;
   border-image-slice: 30% fill;
 
 
-}
-
-/* Sub Project TEXT */
-h4{
-  color: var(--uhhshadow);
-  text-shadow: 3px 3px 0px var(--crust);
-
-  font-size: 400%;
 }
 
 /* MAIN TITLE */
@@ -193,7 +136,7 @@ h1{
   font-size: 550%;
   width: 50%;
 
-  z-index: 5;
+  z-index: 10;
 }
 
 .bubbles{
@@ -271,8 +214,6 @@ h1{
     font-size: 350%;
     letter-spacing: 3px;
     transform: translateY(-10px);
-    margin-top: -10px;
-    margin-bottom: -20px;
   }
   50%{
     font-size: 325%;
@@ -321,61 +262,10 @@ h1{
 
 h2:hover {
   animation:
+    colorSelect 0.44s forwards,
     heartbeatBig 3.5s infinite alternate;
 }
 
-h4:hover {
-  animation:
-    heartbeatBig 3.5s infinite alternate;
-}
-
-a.button {
-  margin: 1% auto;
-  display: block;
-  text-align: center;
-  width: 15%;
-
-  font-family: pixelBody;
-  font-size: 400%;
-  color: var(--sauceshadow);
-
-  border-image: url(customtextboxHead.png) 30 round;
-  border-image-width: 20px;
-  border-image-slice: 30% fill;
-
-  font-smooth: never;
-  -webkit-font-smoothing : none;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 5px;
-  width: 30%;
-  height: 35%;
-}
-
-projectdesc{
-  margin: 0% auto;
-  display: block;
-  text-align: center;
-  width: 25%;
-  margin-top: 0%;
-  height: auto;
-
-
-  font-family: pixelBody;
-  font-size: 400%;
-  color: var(--uhh);
-  text-shadow: 3px 3px 0px var(--crust);
-
-  border-image: url(customtextboxHead.png) 30 round;
-  border-image-width: 20px;
-  border-image-slice: 30% fill;
-
-  font-smooth: never;
-  -webkit-font-smoothing : none;
+.bubtest {
+  height: 0%z;
 }
